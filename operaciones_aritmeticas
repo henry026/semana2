@@ -1,0 +1,29 @@
+using System;
+		
+
+public class Program
+	
+{
+	
+	public static void Main()
+		
+	{
+		int num1,num2,suma,res,mul,div;
+	
+		
+		Console.WriteLine("ingrese el primer numero");
+		num1=int.Parse(Console.ReadLine());
+		Console.WriteLine("ingrese segundo numero");
+		num2=int.Parse(Console.ReadLine());
+		suma=num1+num2;
+		res=num1-num2;
+		mul=num1*num2;
+		div=num1/num2;
+		
+		Console.WriteLine("el resultado es {0} ", suma);
+		Console.WriteLine("el resultado es {0} ", res);
+		Console.WriteLine("el resultado es {0} ", mul);
+		Console.WriteLine("el resultado es {0} ", div);
+	}
+	
+}
