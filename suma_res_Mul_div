@@ -1,0 +1,62 @@
+//proglema 4
+
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Seleccione operacion");
+			Console.WriteLine("1. Suma");
+			Console.WriteLine("2. Resta");
+			Console.WriteLine("3. Multiplicacion");
+			Console.WriteLine("4. Division");
+		int op=Convert.ToInt32(Console.ReadLine());
+			if (op==1)
+				
+			{
+				Console.WriteLine("ingrese primer cantidad");
+				double num1=Convert.ToDouble(Console.ReadLine());
+				Console.WriteLine("ingrese segunda cantidad");
+				double num2=Convert.ToDouble(Console.ReadLine());
+				double total = num1+num2;
+				Console.WriteLine("el total es "+total);
+				
+			}
+				
+			if (op==2)
+				{
+					Console.WriteLine("ingrese cantidad");
+					double num1=Convert.ToDouble(Console.ReadLine());
+					Console.WriteLine("ingrese cantidad");
+					double num2=Convert.ToDouble(Console.ReadLine());
+					double total=num1-num2;
+					Console.WriteLine("el total es "+total);
+				}
+		
+		
+						
+			if (op==3)
+				{
+					Console.WriteLine("ingrese cantidad");
+					double num1=Convert.ToDouble(Console.ReadLine());
+					Console.WriteLine("ingrese cantidad");
+					double num2=Convert.ToDouble(Console.ReadLine());
+					double total=num1*num2;
+					Console.WriteLine("el total es "+total);
+				}
+		
+							
+			if (op==4)
+				{
+					Console.WriteLine("ingrese cantidad");
+					double num1=Convert.ToDouble(Console.ReadLine());
+					Console.WriteLine("ingrese cantidad");
+					double num2=Convert.ToDouble(Console.ReadLine());
+					double total=num1/num2;
+					Console.WriteLine("el total es "+total);
+				}
+		
+		}
+}
