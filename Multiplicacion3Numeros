@@ -1,0 +1,30 @@
+
+
+using System;
+		
+
+public class Program
+	
+{
+	
+	public static void Main()
+		
+	{
+		int num1,num2,num3,result;
+	
+		
+		Console.WriteLine("ingrese el primer numero");
+		num1=int.Parse(Console.ReadLine());
+		Console.WriteLine("ingrese segundo numero");
+		num2=int.Parse(Console.ReadLine());
+		Console.WriteLine("ingrese tecer numero");
+		num3=int.Parse(Console.ReadLine());
+		result=num1*num2*num3;
+		
+		
+		Console.WriteLine("el resultado es {0} ", result);
+		
+	
+	}
+	
+}
