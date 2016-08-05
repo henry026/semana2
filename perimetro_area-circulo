@@ -1,0 +1,34 @@
+/*
+ * Created by SharpDevelop.
+ * User: Windows 8
+ * Date: 5/8/2016
+ * Time: 10:53 a. m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+
+namespace circulo
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Double r,pe,a;
+			Double  p = 3.1416;
+						Console.WriteLine(" ");
+			Console.WriteLine("CALCULA AREA Y PERIMETRO DE UN CIRCULO");
+			Console.WriteLine(" ");
+				Console.WriteLine("Ingresa radio");
+			    r=Double.Parse(Console.ReadLine());
+				pe=2*p*r;
+				a=p*r*r;
+				Console.WriteLine("El perimetro :" + pe);
+				Console.WriteLine(" ");
+				Console.WriteLine("El area del circulo:" + a);
+				Console.WriteLine(" ");
+			Console.Write("Presiona una tecla para salir . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
