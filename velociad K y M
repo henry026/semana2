@@ -1,0 +1,36 @@
+/*
+ * Created by SharpDevelop.
+ * User: Windows 8
+ * Date: 5/8/2016
+ * Time: 11:30 a. m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+
+namespace calcular
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Double v,m;
+			Double d,t;
+			
+			
+			Console.WriteLine(" ");
+			Console.WriteLine("VELOCIDAD EN KM/H Y M/H");
+			Console.WriteLine(" ");
+			Console.WriteLine("DISTANCIA ? ");
+			d=Double.Parse(Console.ReadLine());
+			Console.WriteLine("TIEMPO ? ");
+			t=Double.Parse(Console.ReadLine());
+			v=d/t;
+			m=v*0.621371;
+			Console.WriteLine("La velocidad en KM/H " + v);
+			Console.WriteLine("La velocidad en M/H " + m);
+			Console.WriteLine("Presiona una tecla para continuar . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
