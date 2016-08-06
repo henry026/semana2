@@ -1,0 +1,42 @@
+/*
+ * Created by SharpDevelop.
+ * User: HP17
+ * Date: 6/08/2016
+ * Time: 9:26 a. m.
+ * SE UTILIZA SharpDevelop
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+ 
+class ejer9
+{
+    static void Main(string[]args)
+    {
+ 
+        string letra;
+       
+        Console.WriteLine("INGRESE CARACTER:");
+        letra = Console.ReadLine();
+        char c = (char)Console.Read();
+        if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u" || char.IsLetter (c) || (char.IsLower (c)))
+                   
+        {
+            Console.WriteLine ("es vocal");
+            Console.WriteLine("la letra es minuscula");
+        }
+        else
+        {
+ 
+            Console.WriteLine ("!no es vocal!");
+            Console.WriteLine("la letra es mayuscula");
+            Console.ReadLine();
+ 
+ 
+        }
+           Console.ReadKey();
+    }
+  }
+  
