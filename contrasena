@@ -1,0 +1,30 @@
+	using System;
+					
+	public class Program
+{
+	public static void Main()
+	{
+		string nombre, clave;
+		int a = 0;
+		Console.WriteLine("USUARIO:");
+		nombre=Console.ReadLine();
+		Console.WriteLine("CONTRASENA: ");
+		clave=Console.ReadLine();
+		while (clave !="elvis" && a <=3)
+		{
+			Console.WriteLine("Clave incorrecta, ingrese su clave: ");
+			clave=Console.ReadLine();
+			a=a+1;
+			if (a>2)
+			{
+				Console.WriteLine("Error");
+				break;
+				}
+		}
+		if (clave =="elvis")
+		{
+			Console.WriteLine("Bienvenido "+nombre);
+		}
+		//https://dotnetfiddle.net/4X7nWn
+		}
+	}
