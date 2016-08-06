@@ -1,0 +1,41 @@
+/*
+ * Created by SharpDevelop.
+ * User: HP17
+ * Date: 6/08/2016
+ * Time: 9:31 a. m.
+ * SE UTILIZA SharpDevelop
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+ 
+class eje10
+{
+ 
+    static void Main()
+    {
+ 
+        float num, num2;
+ 
+        Console.Write("VALOR 1:");
+        num = float.Parse(Console.ReadLine());
+ 
+        Console.Write("VALOR 2:");
+        num2 = float.Parse(Console.ReadLine());
+ 
+        while (num == 0 && num2==0)
+        {
+            Console.Write("Reingrese número:");
+            num = float.Parse(Console.ReadLine());
+            num2 = float.Parse(Console.ReadLine());
+        }
+ 
+        if (num % 2 == 0 && num2 % 2 == 0)
+            Console.Write("El {0} y {1}  es verdadero", num, num2);
+        else
+            Console.Write("El {0} y {1 } es falso", num, num2);
+ 
+        Console.Read();
+ 
+ 
+    }
+}
