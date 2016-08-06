@@ -1,0 +1,85 @@
+/*
+ * Created by SharpDevelop.
+ * User: MGN05549
+ * Date: 05/08/2016
+ * Time: 08:44 p.m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+
+namespace usuario_y_contrasna
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			const char usuario [] ="usuario";
+			const char contrasena[] = "contrasena";
+			const int numIntentos=3;
+			int i;
+			char usuario [100];
+			char contrasena[1000];
+			for (i=0; i<numIntentos; i++){
+				Console.WriteLine("usuario");
+				usuario=char.Parse(Console.ReadLine());
+				if (strmp(usuario,usuario)!=0){
+					Console.WriteLine("usuario no registrado");
+					}
+				Console.WriteLine("contrasena");
+				contrasena=char.Parse(Console.ReadLine());
+				if (strcmp(contrasena,contrasena)!=0) {
+					Console.WriteLine("contrasena invalida");
+					}
+				Console.WriteLine("Bienvenido al sistema");
+				break
+			}
+		if (i==numIntentos) {
+				Console.WriteLine("programa no ejecutado");
+				//return 
+				Console.WriteLine("programa ejecutado");
+				return 0
+				
+		}
+			
+		}
+		
+			
+
+/*int main(void) {
+const char CONTRASENA[] ="contrasena";
+const int numIntentos =3;
+int i;
+char contrasena[100];
+for (i=0; i<numIntentos; i++) {
+printf("contrasena: ");
+scanf("%s", contrasena);
+if (strcmp(CONTRASENA, contrasena) != 0) {
+printf("\tcontrasena invalida\n");
+continue;
+}
+printf("\n*** Bienvenido al programa ***\n");
+break;
+}
+if (i == numIntentos) {
+printf("\nPrograma no ejecutado.\n");
+return 1;
+}
+printf("\nPrograma ejecutando...\n");
+//programa
+return 0;
+}
+			
+			
+				
+			
+			
+			
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
