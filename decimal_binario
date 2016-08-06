@@ -1,0 +1,72 @@
+/*
+ * Created by SharpDevelop.
+ * User: HP17
+ * Date: 6/08/2016
+ * Time: 9:56 a. m.
+ * Se utilizo SharpDevelop
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+
+namespace decimal_bin
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+
+			   Console.Write("Ingrese numero: ");
+            int num = Convert.ToInt32(Console.ReadLine()); 
+
+            int x2 = 4;
+            string d = Convert.ToString(num); 
+            for (int k = 0; k < d.Length; k++)
+            {
+                Console.SetCursorPosition(x2++, 5); 
+                Console.Write(d[k]); 
+            }
+          
+
+			string n = "";
+            int aux;
+            while (num > 0)
+            {
+                aux = num % 2;
+                num = num / 2;
+                
+                n = aux + n;
+            }
+
+                int x1 = 2;
+            string dec = "Numero";
+            for (int j = 0; j < dec.Length; j++)
+            {
+                Console.SetCursorPosition(x1++, 3);
+                Console.Write(dec[j]);
+            }
+
+            int x3 = 15;
+            string bin = "Binario";
+            for (int l = 0; l < bin.Length; l++)
+            {
+                Console.SetCursorPosition(x3++, 3);
+                Console.Write(bin[l]);
+            }
+
+
+            int x = 16;
+
+            for (int i = 0; i < n.Length; i++)
+            {
+            	Console.WriteLine(" ");
+                Console.SetCursorPosition(x++, 5);
+                Console.Write(n[i]);
+            }
+
+            Console.WriteLine("");
+			Console.Write("Presiona para continuar . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
